@@ -1,4 +1,4 @@
-package widget.view.quickreturn.demo;
+package org.android.black.quickreturn;
 
 import widget.base.ui.BaseActivity;
 

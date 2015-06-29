@@ -1,4 +1,4 @@
-package widget.view.quickreturn.demo;
+package org.android.black.quickreturn;
 
 /**
  * Created by liumingkong on 15/6/29.

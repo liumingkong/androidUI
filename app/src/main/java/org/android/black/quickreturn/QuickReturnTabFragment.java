@@ -1,4 +1,4 @@
-package widget.view.quickreturn.demo;
+package org.android.black.quickreturn;
 
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;

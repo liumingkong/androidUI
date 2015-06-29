@@ -1,4 +1,4 @@
-package widget.view.quickreturn.demo;
+package org.android.black.quickreturn;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,19 +12,19 @@ import org.android.black.R;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import widget.view.quickreturn.utils.QuickReturnViewType;
-import widget.view.quickreturn.views.NotifyingWebView;
-import widget.view.quickreturn.views.QuickReturnWebViewOnScrollChangedListener;
+import widget.view.quickreturn.views.NotifyingScrollView;
+import widget.view.quickreturn.views.SpeedyQuickReturnScrollViewOnScrollChangedListener;
 
 /**
  * Created by etiennelawlor on 6/23/14.
  */
-public class QuickReturnWebViewFragment extends Fragment {
+public class SpeedyQuickReturnFragment extends Fragment {
 
     // region Member Variables
     private QuickReturnViewType mQuickReturnViewType;
 
-    @InjectView(R.id.web_view)
-    NotifyingWebView mNotifyingWebView;
+    @InjectView(R.id.scroll_view)
+    NotifyingScrollView mNotifyingScrollView;
     @InjectView(R.id.quick_return_header_tv)
     TextView mQuickReturnHeaderTextView;
     @InjectView(R.id.quick_return_footer_tv)
@@ -35,14 +35,14 @@ public class QuickReturnWebViewFragment extends Fragment {
     //endregion
 
     // region Constructors
-    public static QuickReturnWebViewFragment newInstance(Bundle extras) {
-        QuickReturnWebViewFragment fragment = new QuickReturnWebViewFragment();
+    public static SpeedyQuickReturnFragment newInstance(Bundle extras) {
+        SpeedyQuickReturnFragment fragment = new SpeedyQuickReturnFragment();
         fragment.setRetainInstance(true);
         fragment.setArguments(extras);
         return fragment;
     }
 
-    public QuickReturnWebViewFragment() {
+    public SpeedyQuickReturnFragment() {
     }
     // endregion
 
@@ -60,7 +60,7 @@ public class QuickReturnWebViewFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_quick_return_webview, container, false);
+        View view = inflater.inflate(R.layout.fragment_quick_return, container, false);
         ButterKnife.inject(this, view);
         return view;
     }
@@ -69,45 +69,35 @@ public class QuickReturnWebViewFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mNotifyingWebView.loadUrl("http://www.baidu.com");
-        int headerHeight = getResources().getDimensionPixelSize(R.dimen.facebook_header_height);
-        int headerTranslation = -(headerHeight);
-
-        int footerTranslation = getResources().getDimensionPixelSize(R.dimen.facebook_footer_height);
-
-        QuickReturnWebViewOnScrollChangedListener scrollListener;
+        SpeedyQuickReturnScrollViewOnScrollChangedListener scrollListener;
         
         switch (mQuickReturnViewType){
             case HEADER:
                 mQuickReturnHeaderTextView.setVisibility(View.VISIBLE);
-                scrollListener = new QuickReturnWebViewOnScrollChangedListener.Builder(QuickReturnViewType.HEADER)
+                scrollListener = new SpeedyQuickReturnScrollViewOnScrollChangedListener.Builder(getActivity(), QuickReturnViewType.HEADER)
                         .header(mQuickReturnHeaderTextView)
-                        .minHeaderTranslation(headerTranslation)
                         .build();
-                mNotifyingWebView.setOnScrollChangedListener(scrollListener);
+                mNotifyingScrollView.setOnScrollChangedListener(scrollListener);
                 break;
             case FOOTER:
                 mQuickReturnFooterTextView.setVisibility(View.VISIBLE);
-                scrollListener = new QuickReturnWebViewOnScrollChangedListener.Builder(QuickReturnViewType.FOOTER)
+                scrollListener = new SpeedyQuickReturnScrollViewOnScrollChangedListener.Builder(getActivity(), QuickReturnViewType.FOOTER)
                         .footer(mQuickReturnFooterTextView)
-                        .minFooterTranslation(footerTranslation)
                         .build();
-                mNotifyingWebView.setOnScrollChangedListener(scrollListener);
+                mNotifyingScrollView.setOnScrollChangedListener(scrollListener);
                 break;
             case BOTH:
                 mQuickReturnHeaderTextView.setVisibility(View.VISIBLE);
                 mQuickReturnFooterTextView.setVisibility(View.VISIBLE);
-                scrollListener = new QuickReturnWebViewOnScrollChangedListener.Builder(QuickReturnViewType.BOTH)
+                scrollListener = new SpeedyQuickReturnScrollViewOnScrollChangedListener.Builder(getActivity(), QuickReturnViewType.BOTH)
                         .header(mQuickReturnHeaderTextView)
-                        .minHeaderTranslation(headerTranslation)
                         .footer(mQuickReturnFooterTextView)
-                        .minFooterTranslation(footerTranslation)
                         .build();
-                mNotifyingWebView.setOnScrollChangedListener(scrollListener);
+                mNotifyingScrollView.setOnScrollChangedListener(scrollListener);
                 break;
         }
 
-        mNotifyingWebView.setOverScrollEnabled(false);
+        mNotifyingScrollView.setOverScrollEnabled(false);
     }
 
     @Override

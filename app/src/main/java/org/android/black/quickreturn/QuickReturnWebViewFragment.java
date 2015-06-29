@@ -1,4 +1,4 @@
-package widget.view.quickreturn.demo;
+package org.android.black.quickreturn;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,12 +13,12 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import widget.view.quickreturn.utils.QuickReturnViewType;
 import widget.view.quickreturn.views.NotifyingWebView;
-import widget.view.quickreturn.views.SpeedyQuickReturnWebViewOnScrollChangedListener;
+import widget.view.quickreturn.views.QuickReturnWebViewOnScrollChangedListener;
 
 /**
  * Created by etiennelawlor on 6/23/14.
  */
-public class SpeedyQuickReturnWebViewFragment extends Fragment {
+public class QuickReturnWebViewFragment extends Fragment {
 
     // region Member Variables
     private QuickReturnViewType mQuickReturnViewType;
@@ -35,14 +35,14 @@ public class SpeedyQuickReturnWebViewFragment extends Fragment {
     //endregion
 
     // region Constructors
-    public static SpeedyQuickReturnWebViewFragment newInstance(Bundle extras) {
-        SpeedyQuickReturnWebViewFragment fragment = new SpeedyQuickReturnWebViewFragment();
+    public static QuickReturnWebViewFragment newInstance(Bundle extras) {
+        QuickReturnWebViewFragment fragment = new QuickReturnWebViewFragment();
         fragment.setRetainInstance(true);
         fragment.setArguments(extras);
         return fragment;
     }
 
-    public SpeedyQuickReturnWebViewFragment() {
+    public QuickReturnWebViewFragment() {
     }
     // endregion
 
@@ -69,30 +69,39 @@ public class SpeedyQuickReturnWebViewFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mNotifyingWebView.loadUrl("file:///android_asset/lipsum.html");
-        SpeedyQuickReturnWebViewOnScrollChangedListener scrollListener;
+        mNotifyingWebView.loadUrl("http://www.baidu.com");
+        int headerHeight = getResources().getDimensionPixelSize(R.dimen.facebook_header_height);
+        int headerTranslation = -(headerHeight);
+
+        int footerTranslation = getResources().getDimensionPixelSize(R.dimen.facebook_footer_height);
+
+        QuickReturnWebViewOnScrollChangedListener scrollListener;
         
         switch (mQuickReturnViewType){
             case HEADER:
                 mQuickReturnHeaderTextView.setVisibility(View.VISIBLE);
-                scrollListener = new SpeedyQuickReturnWebViewOnScrollChangedListener.Builder(getActivity(), QuickReturnViewType.HEADER)
+                scrollListener = new QuickReturnWebViewOnScrollChangedListener.Builder(QuickReturnViewType.HEADER)
                         .header(mQuickReturnHeaderTextView)
+                        .minHeaderTranslation(headerTranslation)
                         .build();
                 mNotifyingWebView.setOnScrollChangedListener(scrollListener);
                 break;
             case FOOTER:
                 mQuickReturnFooterTextView.setVisibility(View.VISIBLE);
-                scrollListener = new SpeedyQuickReturnWebViewOnScrollChangedListener.Builder(getActivity(), QuickReturnViewType.FOOTER)
+                scrollListener = new QuickReturnWebViewOnScrollChangedListener.Builder(QuickReturnViewType.FOOTER)
                         .footer(mQuickReturnFooterTextView)
+                        .minFooterTranslation(footerTranslation)
                         .build();
                 mNotifyingWebView.setOnScrollChangedListener(scrollListener);
                 break;
             case BOTH:
                 mQuickReturnHeaderTextView.setVisibility(View.VISIBLE);
                 mQuickReturnFooterTextView.setVisibility(View.VISIBLE);
-                scrollListener = new SpeedyQuickReturnWebViewOnScrollChangedListener.Builder(getActivity(), QuickReturnViewType.BOTH)
+                scrollListener = new QuickReturnWebViewOnScrollChangedListener.Builder(QuickReturnViewType.BOTH)
                         .header(mQuickReturnHeaderTextView)
+                        .minHeaderTranslation(headerTranslation)
                         .footer(mQuickReturnFooterTextView)
+                        .minFooterTranslation(footerTranslation)
                         .build();
                 mNotifyingWebView.setOnScrollChangedListener(scrollListener);
                 break;

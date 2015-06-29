@@ -9,7 +9,7 @@ import widget.base.ui.BaseActivity;
 import org.android.black.R;
 import org.android.black.pageswitch.MainPageActivity;
 
-import widget.view.quickreturn.demo.QuickReturnActivity;
+import org.android.black.quickreturn.QuickReturnActivity;
 
 
 public class MainActivity extends BaseActivity {

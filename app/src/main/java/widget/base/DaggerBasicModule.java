@@ -15,10 +15,10 @@ import dagger.Module;
 import dagger.Provides;
 
 import widget.base.ui.BaseFragment;
-import widget.view.quickreturn.demo.QuickReturnActivity;
-import widget.view.quickreturn.demo.QuickReturnFragActivity;
-import widget.view.quickreturn.demo.QuickReturnTabActivity;
-import widget.view.quickreturn.demo.QuickReturnTabFragment;
+import org.android.black.quickreturn.QuickReturnActivity;
+import org.android.black.quickreturn.QuickReturnFragActivity;
+import org.android.black.quickreturn.QuickReturnTabActivity;
+import org.android.black.quickreturn.QuickReturnTabFragment;
 
 import javax.inject.Singleton;
 

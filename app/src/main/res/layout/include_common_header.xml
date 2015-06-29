@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dip"
+    android:gravity="top|center_vertical"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/common_header_left_btn_rlv"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical|start"
+        android:background="@drawable/common_header_btn_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:src="@drawable/common_header_previous"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical|center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/common_header_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:width="200dip"
+            android:ellipsize="end"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/common_text_color"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_gravity="bottom"
+        android:background="#dad7d6" />
+</FrameLayout>

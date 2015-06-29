@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="common_header_btn_pressed">#2d000000</color>
+
+    <color name="common_text_color">#e8753e</color>
+
+
+    <color name="gray">#ff7f7f7f</color>
+    <color name="blue">#72affb</color>
+    <color name="avatar_background">#66e5beab</color>
+    <color name="common_header_bg">#ffffffff</color>
+    <color name="feed_bg">#80f8f8f0</color>
+    <color name="common_gray_divider">#e4e2e0</color>
+    <color name="common_gray_bg">#f5f3f2</color>
+    <color name="profile_filed_title">#51534f</color>
+    <color name="profile_filed_detail">#9e9a98</color>
+    <color name="moment_content">#53504f</color>
+    <color name="common_gray_text">#9e9a98</color>
+    <color name="common_gray_border">#f7f6f6</color>
+    <color name="edit_text_focus">#f88f3e</color>
+    <color name="edit_text_unfocus">#fff4f2f1</color>
+    <color name="activity_backgroud_bg">#dad7d6</color>
+    <color name="login_text_color">#fcbe51</color>
+    <color name="new_fans_bg">#fdf6f3</color>
+    <color name="url_color">#7dd0e0</color>
+    <color name="sticker_center_ready">#ec7d46</color>
+    <color name="sticker_center_done">#d9d7cd</color>
+
+    <!-- 所有的默认背景颜色-->
+    <color name="common_view_bg_white">#ffffffff</color>
+    <color name="common_view_bg_grey">#ededed</color>
+    <color name="maintab_textcolor_normal">#9e9a98</color>
+    <color name="maintab_textcolor_pressed">#e95b17</color>
+    <color name="sysnotice_bg_grey">#ededed</color>
+    <color name="sysnotice_listview_divider">#ffa5a5a5</color>
+    <color name="common_title_dark">#5f5f5f</color>
+    <color name="common_hint">#b8b4b3</color>
+    <color name="light_text_color">#ffd7d7d7</color>
+    <color name="chatting_footer_text_color">#ff7f7f7f</color>
+    <color name="chatting_card_seperator_color">#ffe8eaec</color>
+    <color name="chatting_item_usercard_summary">#ff8c8c8c</color>
+    <color name="grey">#ff808080</color>
+    <color name="search_hint">#ffcccccc</color>
+    <color name="graywhite">#F5F5F5</color>
+    <color name="listitem_black">#ff000000</color>
+    <color name="listitem_gray">#ff9da19e</color>
+    <color name="conv_listitem_gray">#ffbfbfbf</color>
+    <color name="color_half_transp">#a0101010</color>
+    <color name="font_attribute">#ff000000</color>
+    <color name="font_value">#ff888271</color>
+    <drawable name="list_normal">#FFFFFF</drawable>
+    <drawable name="darkgray">#808080FF</drawable>
+    <drawable name="white">#FFFFFFFF</drawable>
+    <drawable name="silver">#00ffffff</drawable>
+    <!-- 透明色 -->
+    <color name="hint_foreground_dark">#ff808080</color>
+    <color name="dim_foreground_dark">#bfffffff</color>
+    <color name="dialog_mask">#6fffffff</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="ivory">#FFFFF0</color>
+    <color name="darkgray">#A9A9A9</color>
+    <color name="transparent_gray">#AA808080</color>
+    <color name="chatting_foot_bg">#e95b17</color>
+    <color name="text_empty">#ffd2cec1</color>
+    <color name="text_shadow">#000000</color>
+    <color name="bg_normal_color">#fff6f6f6</color>
+    <color name="whitesmoke">#F5F5F5</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <!--新界面-->
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="blackwith10tran">#1a000000</color>
+    <color name="blackwith20tran">#2a000000</color>
+    <color name="blackwith30tran">#3d000000</color>
+    <color name="light_gray">#ffececec</color>
+    <color name="dark_gray">#ff999999</color>
+    <color name="silver">#ffecebe8</color>
+    <color name="round_corner_filter_border">#ff000000</color>
+    <color name="dialog_item_normal">#fff7f1ec</color>
+    <color name="dialog_divider">#ffe8e0da</color>
+    <color name="dialog_btn_press">#ffece5df</color>
+    <color name="dialog_btn_normal">#fffbf6f2</color>
+    <color name="dialog_background">#fffbf6f2</color>
+    <color name="chatting_image_border">#e0dfde</color>
+
+    <color name="text_title">#ff5f5f5f</color>
+    <color name="text_content">#ffa19d94</color>
+    <color name="text_desc">#ffbebbb4</color>
+
+    <color name="btn_dialog">#cc000000</color>
+    <color name="emoji_indicator_selected">#ffdddddd</color>
+    <color name="emoji_indicator_background">#fff9f9f9</color>
+    <color name="background_normal">#fffffcf8</color>
+    <color name="background_normal_press">#ffece7da</color>
+    <color name="background_normal_selected">#fffff2ab</color>
+
+    <color name="btn_pressed">#ff0688db</color>
+    <color name="orange">#ffef9b2d</color>
+    <color name="dimgray">#696969</color>
+    <color name="yellow">#FFFF00</color>
+
+    <color name="gender_male">#7fd3c2</color>
+    <color name="gender_female">#f9a0a0</color>
+    <color name="vip_bg_valid">#ffc969</color>
+    <color name="vip_bg_expire">#b4b4b4</color>
+    <color name="vip_text">#ff4e00</color>
+    <color name="payvip_bg">#ff7f00</color>
+    <color name="payvip_succ_text">#9a9a98</color>
+
+    <color name="profile_bg_begin">#00ffffff</color>
+    <color name="profile_bg_center">#ff000000</color>
+    <color name="profile_bg_end">#ff000000</color>
+    <color name="nearby_app_title">#727272</color>
+    <color name="nearby_app_more">#9f9fa1</color>
+    <color name="feedtimeline_avatar">#bbffffff</color>
+
+    <!-- roam -->
+    <color name="userroam_divider">#ffffff</color>
+    <color name="userroam_pop_divider">#CCFFFFFF</color>
+    <color name="userroam_header_gray">#99808080</color>
+    <color name="userroam_header_btn_normal">#00FFFFFF</color>
+    <color name="userroam_header_btn_pressed">#4DFFFFFF</color>
+    <color name="userroam_header_vip_right_normal">#DE22c064</color>
+
+
+    <color name="roam_bottom_cloud_begin">#FFFFFF</color>
+    <color name="roam_bottom_cloud_center">#FDFDFC</color>
+    <color name="roam_bottom_cloud_end">#DEDFF3</color>
+
+
+    <color name="bg_item_topic">#AA000000</color>
+    <color name="bg_item_topic_top">#DBD9D8</color>
+
+
+</resources>

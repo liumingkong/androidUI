@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="itemCardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">4dip</item>
+    </style>
+
+    <style name="itemGridCardView" parent="itemCardView">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="itemTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="itemGridTextView" parent="itemTextView">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+</resources>

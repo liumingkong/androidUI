@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_common_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/page_change_zoom_cv"
+                    style="@style/itemCardView"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/itemTextView"
+                        android:text="放大缩小" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/page_change_fade_cv"
+                    style="@style/itemCardView"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/itemTextView"
+                        android:text="淡入淡出" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/page_change_pushFromUp_cv"
+                    style="@style/itemCardView"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/itemTextView"
+                        android:text="上->下推入" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/page_change_pushFromDown_cv"
+                    style="@style/itemCardView"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/itemTextView"
+                        android:text="下->上推入" />
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/page_change_slideleft_cv"
+                    style="@style/itemCardView"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/itemTextView"
+                        android:text="左->右推入" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/page_change_slideright_cv"
+                    style="@style/itemCardView"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/itemTextView"
+                        android:text="右->左推入" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/page_change_slideUpDown_cv"
+                    style="@style/itemCardView"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/itemTextView"
+                        android:text="上下交错" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/page_change_slideLeftRight_cv"
+                    style="@style/itemCardView"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/itemTextView"
+                        android:text="左右交错" />
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/page_change_rotate_1_cv"
+                    style="@style/itemCardView"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/itemTextView"
+                        android:text="旋转展示1" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/page_change_rotate_2_cv"
+                    style="@style/itemCardView"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/itemTextView"
+                        android:text="旋转展示2" />
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/page_change_from_topleft_cv"
+                style="@style/itemCardView">
+
+                <TextView
+                    style="@style/itemTextView"
+                    android:text="从左上角进入页面" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

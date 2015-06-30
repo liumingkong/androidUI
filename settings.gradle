@@ -1,1 +1,1 @@
-include ':app', ':pageslidingtab', ':pageswitch'
+include ':app', ':pageslidingtab', ':pageswitch', ':waveview'

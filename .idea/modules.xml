@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/pageslidingtab/pageslidingtab.iml" filepath="$PROJECT_DIR$/pageslidingtab/pageslidingtab.iml" />
       <module fileurl="file://$PROJECT_DIR$/pageswitch/pageswitch.iml" filepath="$PROJECT_DIR$/pageswitch/pageswitch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/waveview/waveview.iml" filepath="$PROJECT_DIR$/waveview/waveview.iml" />
     </modules>
   </component>
 </project>

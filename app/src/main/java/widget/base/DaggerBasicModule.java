@@ -19,6 +19,7 @@ import org.android.black.quickreturn.QuickReturnActivity;
 import org.android.black.quickreturn.QuickReturnFragActivity;
 import org.android.black.quickreturn.QuickReturnTabActivity;
 import org.android.black.quickreturn.QuickReturnTabFragment;
+import org.android.black.waveview.WaveViewActivity;
 
 import javax.inject.Singleton;
 
@@ -45,6 +46,7 @@ import javax.inject.Singleton;
                 SubPageActivity.class,
                 BaseFragment.class,
                 QuickReturnFragActivity.class,
+                WaveViewActivity.class,
         },
 
         staticInjections = {

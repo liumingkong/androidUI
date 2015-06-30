@@ -10,6 +10,7 @@ import org.android.black.R;
 import org.android.black.pageswitch.MainPageActivity;
 
 import org.android.black.quickreturn.QuickReturnActivity;
+import org.android.black.waveview.WaveViewActivity;
 
 
 public class MainActivity extends BaseActivity {
@@ -29,4 +30,7 @@ public class MainActivity extends BaseActivity {
     public void onPageChange() {
         startActivity(new Intent(this, MainPageActivity.class));
     }
+    
+    @OnClick(R.id.waveview_cv)
+    public void onWaveView() {startActivity(new Intent(this, WaveViewActivity.class));}
 }

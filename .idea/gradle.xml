@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/pageslidingtab" />
             <option value="$PROJECT_DIR$/pageswitch" />
+            <option value="$PROJECT_DIR$/waveview" />
           </set>
         </option>
       </GradleProjectSettings>

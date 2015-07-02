@@ -59,13 +59,13 @@
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/page_change1_show_cv"
+                    android:id="@+id/pull_to_zoom_listview_cv"
                     style="@style/itemGridCardView"
                     app:cardCornerRadius="8dip">
 
                     <TextView
                         style="@style/itemTextView"
-                        android:text="页面切换效果" />
+                        android:text="下拉放大头部Listview" />
                 </android.support.v7.widget.CardView>
             </LinearLayout>
 

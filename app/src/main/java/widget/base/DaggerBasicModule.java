@@ -15,6 +15,8 @@ import dagger.Module;
 import dagger.Provides;
 
 import widget.base.ui.BaseFragment;
+
+import org.android.black.pulltozoom.PullToZoomActivity;
 import org.android.black.quickreturn.QuickReturnActivity;
 import org.android.black.quickreturn.QuickReturnFragActivity;
 import org.android.black.quickreturn.QuickReturnTabActivity;
@@ -47,6 +49,7 @@ import javax.inject.Singleton;
                 BaseFragment.class,
                 QuickReturnFragActivity.class,
                 WaveViewActivity.class,
+                PullToZoomActivity.class,
         },
 
         staticInjections = {

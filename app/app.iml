@@ -92,8 +92,8 @@
     <orderEntry type="library" exported="" name="common-0.0.3" level="project" />
     <orderEntry type="library" exported="" name="guava-15.0" level="project" />
     <orderEntry type="library" exported="" name="jackson-databind-2.3.1" level="project" />
-    <orderEntry type="library" exported="" name="jackson-annotations-2.3.1" level="project" />
     <orderEntry type="library" exported="" name="butterknife-4.0.1" level="project" />
+    <orderEntry type="library" exported="" name="jackson-annotations-2.3.1" level="project" />
     <orderEntry type="library" exported="" name="dagger-1.2.2" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-22.2.0" level="project" />
     <orderEntry type="library" exported="" name="cardview-v7-21.0.3" level="project" />

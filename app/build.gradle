@@ -63,6 +63,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.black:common:0.0.3'
 
     compile project(':pageswitch')
     compile project(':pageslidingtab')
@@ -71,8 +72,6 @@ dependencies {
 
     compile 'com.android.support:recyclerview-v7:21.+'
     compile 'com.android.support:cardview-v7:21.+'
-
-    compile 'com.android.black:common:0.0.3'
 
     compile 'com.squareup:otto:1.3.8'
     compile 'com.jakewharton:butterknife:4.0.1'

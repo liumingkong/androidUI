@@ -16,11 +16,14 @@ import dagger.Provides;
 
 import widget.base.ui.BaseFragment;
 
+import org.android.black.phoenix.PhoenixActivity;
 import org.android.black.pulltozoom.PullToZoomActivity;
 import org.android.black.quickreturn.QuickReturnActivity;
 import org.android.black.quickreturn.QuickReturnFragActivity;
 import org.android.black.quickreturn.QuickReturnTabActivity;
 import org.android.black.quickreturn.QuickReturnTabFragment;
+import org.android.black.viewpager.FancyCoverActivity;
+import org.android.black.viewpager.ViewPagerActivity;
 import org.android.black.waveview.WaveViewActivity;
 
 import javax.inject.Singleton;
@@ -50,6 +53,9 @@ import javax.inject.Singleton;
                 QuickReturnFragActivity.class,
                 WaveViewActivity.class,
                 PullToZoomActivity.class,
+                PhoenixActivity.class,
+                ViewPagerActivity.class,
+                FancyCoverActivity.class,
         },
 
         staticInjections = {

@@ -9,8 +9,10 @@ import widget.base.ui.BaseActivity;
 import org.android.black.R;
 import org.android.black.pageswitch.MainPageActivity;
 
+import org.android.black.phoenix.PhoenixActivity;
 import org.android.black.pulltozoom.PullToZoomActivity;
 import org.android.black.quickreturn.QuickReturnActivity;
+import org.android.black.viewpager.ViewPagerActivity;
 import org.android.black.waveview.WaveViewActivity;
 
 
@@ -24,17 +26,23 @@ public class MainActivity extends BaseActivity {
 
     @OnClick(R.id.quickreturn_cv)
     public void onQuickReturn() {
-        startActivity(new Intent(this, QuickReturnActivity.class));
+        startActivity(QuickReturnActivity.class);
     }
 
     @OnClick(R.id.page_change_show_cv)
     public void onPageChange() {
-        startActivity(new Intent(this, MainPageActivity.class));
+        startActivity(MainPageActivity.class);
     }
     
     @OnClick(R.id.waveview_cv)
-    public void onWaveView() {startActivity(new Intent(this, WaveViewActivity.class));}
+    public void onWaveView() {startActivity(WaveViewActivity.class);}
 
     @OnClick(R.id.pull_to_zoom_listview_cv)
-    public void onPullToZoom() {startActivity(new Intent(this, PullToZoomActivity.class));}
+    public void onPullToZoom() {startActivity(PullToZoomActivity.class);}
+
+    @OnClick(R.id.phoenix_view)
+    public void onPhoenixview() {startActivity(PhoenixActivity.class);}
+
+    @OnClick(R.id.viewpager_cv)
+    public void onViewPager() {startActivity(ViewPagerActivity.class);}
 }

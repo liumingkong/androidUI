@@ -1,5 +1,6 @@
 package widget.base.ui;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -10,6 +11,7 @@ import com.black.common.utils.Utils;
 import com.squareup.otto.Bus;
 
 import org.android.black.R;
+import org.android.black.quickreturn.QuickReturnActivity;
 
 import javax.inject.Inject;
 
@@ -87,5 +89,9 @@ public class BaseActivity extends FragmentActivity {
         super.finish();
         Ln.d("BasicActivity finish");
         PageSwitchUtils.exitPageAnim(this);//退出动画
+    }
+
+    protected void startActivity(Class<?> targetClass) {
+        startActivity(new Intent(this, targetClass));
     }
 }

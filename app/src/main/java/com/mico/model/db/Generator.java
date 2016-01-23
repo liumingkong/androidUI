@@ -11,7 +11,7 @@ import de.greenrobot.daogenerator.Schema;
  */
 public class Generator {
     public static final String SCHEMA_NAME = "com.mico.model.po";
-    public static final int SCHEMA_VERSION = 5;
+    public static final int SCHEMA_VERSION = 6;
 
     public static void main(String[] args) throws Exception {
         Schema schema = new Schema(SCHEMA_VERSION, SCHEMA_NAME);
@@ -24,6 +24,7 @@ public class Generator {
         addChatRead(schema);
         addTranslate(schema);
         addPushData(schema);
+        addStickerData(schema);
         new DaoGenerator().generateAll(schema, "app/src/main/java");
     }
 
@@ -120,5 +121,14 @@ public class Generator {
         pushData.addStringProperty("content").index().notNull();
         pushData.addLongProperty("ctime").index().notNull();
         pushData.addStringProperty("ext");
+    }
+
+
+    private static void addStickerData(Schema schema) {
+        Entity stickerData = schema.addEntity("StickerData");
+        stickerData.addStringProperty("stickerId").primaryKey().index();
+        stickerData.addStringProperty("content").notNull();
+        stickerData.addLongProperty("ctime").index().notNull();
+        stickerData.addStringProperty("ext");
     }
 }
